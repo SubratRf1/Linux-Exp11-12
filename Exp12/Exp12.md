@@ -166,52 +166,26 @@ display_header
 get_keywords
 evaluate_rules
 exit 0
--Designing clear and non-overlapping rules was challenging because some symptoms occur together 
 
-- Handling free-text user input was difficult due to possible spelling mistakes.
+### <h1 style="background-color: pink;">Observations & Explanation</h1>
 
-- Making the input case-insensitive required additional processing using the tr command.
+- Designing clear and non-overlapping rules for the F1 Qatar Grand Prix was challenging because many topics  
+  (like race strategy, tyres, qualifying, and weather) are often related and overlap naturally.
 
-- Adding medication examples had to be done carefully to keep the system educational and not misleading.
+- Handling free-text user input was difficult due to possible spelling mistakes and variations in keywords  
+  (e.g., “tyres”, “tire”, “tires”, “tyre wear”).  
+  The script was written using lowercase conversion to avoid such mismatches.
 
-- Ensuring that the fallback recommendation appears only when no rule matches required proper use of the matched variable.
+- Multiple rules can be matched when the user enters more than one keyword, such as “race tyres weather”.  
+  This allows the script to output combined F1-related insights for a more detailed response.
 
- #### <h1 style="background-color: pink;">Observations Made</h1>
+- The **if-conditional structure** works effectively for F1 content because each keyword directly represents  
+  a specific type of racing information (strategy, overtaking, transport, etc.).
 
-- The expert system correctly accepts user input and processes it successfully.
+- Ensuring proper fallback behaviour was important so that the script still provides meaningful guidance  
+  even if the user enters unrelated or empty input.
 
-- Multiple rules can be matched when the user enters more than one symptom.
+- The general F1 helper system is simple, interactive, and easy to modify.  
+  Additional race-specific rules can be added without changing the core logic.
 
-- The if conditional statements work effectively for rule evaluation.
-
-- The system displays correct recommendations and medications for valid symptoms.
-
-- The general recommendation is shown only when no specific rule matches.
-
-- The script is simple, interactive, and easy to use.
-
-#### <h1 style="background-color: pink;">Improvements That Can Be Made</h1>
-
-- A menu-driven input system can be added to avoid spelling errors.
-
-- Input validation can be introduced to handle invalid or empty input.
-
-- A loop can be added to allow the user to run the expert system multiple times without restarting the script.
-
-- Rules can be stored in an external file for easier modification and scalability.
-
-- Logging user input and outputs to a file can be added for analysis and debugging.
-
-- More health-related rules can be added to make the expert system more comprehensive.
-
-### <h1 style="background-color: pink;"> CONCLUSION</h1> 
-
-- The rule-based expert system was successfully implemented using shell scripting.
-
-- The system accurately accepts user symptoms and provides appropriate recommendations.
-
-- Conditional statements were effectively used to implement multiple medical rules.
-
-- The inclusion of example medications made the system more informative and practical.
-
-- The fallback general recommendation ensures that the system always provides guidance.
+- A new design/theme style was added
