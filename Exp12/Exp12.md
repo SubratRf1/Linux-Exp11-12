@@ -1,6 +1,6 @@
 # F1 Qatar Grand Prix – Bash-Based Expert System
 
-## 4.11 Summary & Output
+##  The objective of this lab exercise is to build a simple rule-based expert system using shell scripting. The expert system will provide recommendations based on a set of predefined rules.
 
 ### Output  
 ![output](1201.png)
@@ -166,3 +166,52 @@ display_header
 get_keywords
 evaluate_rules
 exit 0
+-Designing clear and non-overlapping rules was challenging because some symptoms occur together 
+
+- Handling free-text user input was difficult due to possible spelling mistakes.
+
+- Making the input case-insensitive required additional processing using the tr command.
+
+- Adding medication examples had to be done carefully to keep the system educational and not misleading.
+
+- Ensuring that the fallback recommendation appears only when no rule matches required proper use of the matched variable.
+
+ #### <h1 style="background-color: pink;">Observations Made</h1>
+
+- The expert system correctly accepts user input and processes it successfully.
+
+- Multiple rules can be matched when the user enters more than one symptom.
+
+- The if conditional statements work effectively for rule evaluation.
+
+- The system displays correct recommendations and medications for valid symptoms.
+
+- The general recommendation is shown only when no specific rule matches.
+
+- The script is simple, interactive, and easy to use.
+
+#### <h1 style="background-color: pink;">Improvements That Can Be Made</h1>
+
+- A menu-driven input system can be added to avoid spelling errors.
+
+- Input validation can be introduced to handle invalid or empty input.
+
+- A loop can be added to allow the user to run the expert system multiple times without restarting the script.
+
+- Rules can be stored in an external file for easier modification and scalability.
+
+- Logging user input and outputs to a file can be added for analysis and debugging.
+
+- More health-related rules can be added to make the expert system more comprehensive.
+
+### <h1 style="background-color: pink;"> CONCLUSION</h1> 
+
+- The rule-based expert system was successfully implemented using shell scripting.
+
+- The system accurately accepts user symptoms and provides appropriate recommendations.
+
+- Conditional statements were effectively used to implement multiple medical rules.
+
+- The inclusion of example medications made the system more informative and practical.
+
+- The fallback general recommendation ensures that the system always provides guidance.
