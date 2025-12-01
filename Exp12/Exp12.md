@@ -169,7 +169,7 @@ evaluate_rules
 exit 0
 
 ```
-### <h1 style="background-color: orange;"> Summary Report</h1>
+### <h1 style="background-color: orange;"> Summary Report
 
 #### <h1 style="background-color: pink;">Challenges Faced</h1
 
