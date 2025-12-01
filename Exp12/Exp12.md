@@ -167,6 +167,7 @@ display_header
 get_keywords
 evaluate_rules
 exit 0
+------
 
 ### <h1 style="background-color: pink;">Observations & Explanation</h1>
 
