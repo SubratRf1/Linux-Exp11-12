@@ -167,9 +167,11 @@ display_header
 get_keywords
 evaluate_rules
 exit 0
-------
 
-### <h1 style="background-color: pink;">Observations & Explanation</h1>
+```
+### <h1 style="background-color: orange;"> Summary Report</h1>
+
+#### <h1 style="background-color: pink;">Challenges Faced</h1
 
 - Designing clear and non-overlapping rules for the F1 Qatar Grand Prix was challenging because many topics  
   (like race strategy, tyres, qualifying, and weather) are often related and overlap naturally.
